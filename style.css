@@ -1,0 +1,103 @@
+*{
+    margin-left: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+font-family: 'Borel', 
+}
+body{
+    background-color: rgb(236,242,248);
+
+}
+.container{
+    margin: auto;
+    background-color: rgb(236,242,248);
+   min-height: 50vh;
+    width: 70vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    row-gap: 25px;
+    column-gap: 25px;
+    padding-top: 2%;
+  
+    
+}
+@media screen and (min-width: 900px) { 
+    
+}
+.item{
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    color: white;
+    padding: 1em;
+    
+}
+#item1{
+    background-color: rgb(117,65,200);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url(https://kabir-sagiii.github.io/CSS_Grid_learn-grid-the-easy-way/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+}
+
+#item5{
+    background-color:rgb(25,33,46);
+    grid-column: 2 /4;
+}
+#item2{
+    background-color: rgb(72,85,106);
+
+}
+#item3{
+    background-color: rgb(255,255,255);
+    grid-row-start: span 2;
+    color: rgb(10, 5, 5);
+}
+    #item4{
+     color: black;
+    }
+    img {
+        max-width: 100%;
+        display: block;
+        
+    }
+.position{
+    color: rgb(136, 149, 149);
+    font-weight: 500;
+    margin-left: 8%;
+    
+}
+.name{
+    font-size: 18px;
+    font-weight: 550;
+}
+.intro{
+font-size: 1.5em;
+font-weight: lighter;
+}
+.intro1{
+    font-size: large;
+    font-weight: lighter;
+    color: rgb(136, 149, 149);
+}
+.profile{
+    width: 1.75rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+#item1 .intro1{
+    color: rgb(253, 248, 248);
+}
+.flex{
+    display: flex;
+        gap: var(--gap, 1rem);
+        /* margin-top: 4%; */
+    }
+    #item1 .position{
+        color: rgb(222, 200, 228);
+    }
+    #item2 .position{
+        color:rgb(127, 145,174);
+}
